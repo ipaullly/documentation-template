@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Miniapp Docs</title>
+</head>
+
+<body>
+  <!-- start side nav bar element -->
+  <nav class="side-navbar">
+    <div class="left-side-bar">
+      <div class="head-text">Miniapp Docs</div>
+      <ul class="option-list">
+        <li class="list">
+          <a href="#introduction">Introduction</a>
+        </li>
+        <li class="list">
+          <a href="#setup">Setup</a>
+        </li>
+        <li class="list">
+          <a href="#pages" class="pages-btn">
+            Pages
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="pages-show">
+            <li><a href="#">App.js</a></li>
+            <li><a href="#">Page Life Cycles</a></li>
+            <li><a href="#">Page Structure</a></li>
+          </ul>
+        </li>
+        <li class="list">
+          <a href="#gotchas" class="gotcha-btn">Gotcha's
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="gotcha-show">
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">JSAPIs pitfalls</a></li>
+            <li><a href="#">iOS vs Android</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-collapse-sidebar">
+      <span class="fas fa-bars">
+
+      </span>
+    </div>
+  </nav>
+  <!-- end of side nav bar element -->
+  <div class="content-area">
+    <div class="wrapper">
+      <div class="banner" id="introduction">
+        <div class="text-content">
+          <h2>Introduction to miniapps</h2>
+        </div>
+        <h3>What is a mini program</h3>
+        <p>
+          The Mini Program technology is the answer to rapid mobile app development. Mini Programs are sub-applications
+          that run inside the mobile app. You can access various services and features on Mini Programs without the need
+          to install additional applications.
+        </p>
+        <p>
+          This technology helps you quickly develop and deploy high-quality services and grow the business on mobile
+          apps. It is easily accesible to users and provides a better user experience for mobile users.
+        </p>
+        <p>
+          With current advancements in the world, a significant percentage of the population can access apps via their smart devices. this frameworks hopes to maximize on this flexibility to propel business interests.
+          With the Mini Programs domiciled within one app (MPESA Super app), users can experience many
+          services i.e insurance, transport, fuel, banking (etc) without installing a multitude of mobile apps on their phones.
+        </p>
+        <p>
+          The main development language of the Mini Program is JavaScript, and the development experience of the Mini
+          Program is similar to web development. For our developers, the migrating cost of moving from the HTML5 to Mini
+          Program is kept to a minimum.
+        </p>
+        <img src="./imgs/mini_program.jpg" alt="bg" class="bg-miniprogram">
+        <!-- <div class="parallax-container">
+          <div class="parallax-wrapper">
+            <div class="parallax-frame">
+              <img src="./imgs/hand" alt="hand" class="par-hand">
+            </div>
+            <img src="./imgs/pin.png" alt="pin" class="par-object pin">
+            <img src="./imgs/cart.png" alt="cart" class="par-object cart">
+            <img src="./imgs/food.png" alt="food" class="par-object food">
+          </div>
+        </div> -->
+        
+        <pre>
+          <!--code Tag starts here -->
+          <code>
+            #include<stdio.h>
+            int main() {
+                printf("Hello Geeks");
+            }
+          <!--code Tag starts here -->
+          </code>
+        </pre>
+      </div>
+      <div class="setup-area" id="setup">
+        <div class="text-content">
+          <h2>Setup</h2>
+        </div>
+        <h3>Steps Involved in the Development </h3>
+        <p>
+          A mini program is developed in an IDE(mini program studio). This is a desktop application used exclusively for code editing, local debugging, preview on device, and publishing of a mini program.
+        </p>
+        <ol>
+          <li>Log into the mini program developer platform as admin and create a mini program. Submit particulars like name, description, logo image etc. </li>
+          <li>Assign team members as developers on the mini program created.</li>
+          <li>Mini program developer develops and debugs the mini program in the IDE.</li>
+          <li>The mini program developer uploads the code package from IDE to the mini program developer platform, then the mini program admin can apply to publish a new version of the mini program.</li>
+          <li>Workspace admin reviews and releases the application.</li>
+          <li>Users can access the mini program in the MPESA app ‘discover’ tab.</li>
+        </ol>
+      </div>
+      <div class="pages-area" id="pages">
+        <div class="text-content">
+          <h2>Pages</h2>
+        </div>
+        <p>
+          Nullam rhoncus mauris in nibh ornare lacinia. Morbi ut sem sit amet orci aliquet rhoncus imperdiet eu elit.
+          Nam vulputate porta dignissim. Aenean eleifend quis nunc sodales semper. Maecenas tempor dolor sed dolor
+          congue faucibus. Vestibulum in justo eget tellus mattis placerat. Morbi venenatis facilisis nunc nec luctus.
+        </p>
+        <p>
+          Nam porttitor arcu et quam dictum commodo. Proin quis maximus libero, quis aliquet tortor. Curabitur rhoncus
+          enim id ultrices pharetra. Curabitur eu magna eget ligula accumsan tristique. Ut aliquam id risus at
+          imperdiet. Curabitur interdum ex vitae sapien consequat blandit. Fusce cursus, augue sit amet tincidunt
+          dapibus, justo nisi feugiat justo, quis maximus velit purus id lacus. Maecenas at dapibus odio. Quisque eros
+          orci, pulvinar et gravida id, hendrerit at augue. Pellentesque eget metus ligula.
+        </p>
+        <p>
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin pulvinar
+          urna ac convallis placerat. Morbi sagittis dapibus nisl, ut pretium odio pellentesque et. Quisque ultricies ac
+          massa at imperdiet. In sem odio, aliquam id urna ut, auctor consectetur dui. Etiam tristique odio fringilla,
+          viverra quam id, convallis felis. Maecenas vulputate justo eu bibendum elementum. Mauris dapibus nisl id ipsum
+          sodales fringilla. Pellentesque lobortis porttitor ante ac interdum.
+        </p>
+        <p>
+          Etiam vitae est nec nunc tempus commodo. Proin vulputate nulla eu nibh gravida, nec consectetur purus
+          scelerisque. Nullam sagittis felis tortor, quis laoreet lorem pellentesque at. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos himenaeos. Donec nisl leo, dictum quis erat a, faucibus
+          rhoncus justo. Pellentesque finibus tincidunt justo id tempor. Ut tincidunt sapien enim.
+        </p>
+        <p>
+          Ut ut enim purus. Mauris felis dui, eleifend id aliquet a, ornare non lorem. Sed augue lorem, pulvinar quis
+          erat et, luctus tempus quam. Curabitur efficitur dui sapien, vitae interdum turpis laoreet mollis. Sed
+          accumsan vitae augue eget placerat. Quisque in vehicula libero. Sed justo nulla, dictum quis tincidunt non,
+          mattis a odio. Donec mattis condimentum nunc eget tempor. Morbi quis vulputate nulla. Duis at aliquam arcu.
+        </p>
+        <p>
+          Proin posuere, leo eu rhoncus consectetur, neque ligula dictum risus, vitae facilisis sem neque vitae quam.
+          Integer quis magna convallis, sodales eros non, vulputate magna. In pulvinar semper felis. Ut id est sed ante
+          lobortis tristique. Donec finibus quis dui vitae finibus. Aenean placerat nunc erat, id laoreet lectus
+          tincidunt iaculis. Maecenas vitae urna fermentum leo tincidunt aliquam in non lectus. Sed sollicitudin congue
+          augue, vel volutpat ante mollis a. Ut a lectus ut nunc blandit pretium id eu ex. Mauris vitae eros justo.
+          Quisque dignissim purus eget felis blandit, sed volutpat tortor mattis. Vestibulum cursus sollicitudin nisi et
+          sollicitudin. Morbi faucibus velit neque, in tincidunt tortor ultrices sed. Ut non velit sed urna laoreet
+          pulvinar. Nullam convallis vel nibh nec placerat.
+        </p>
+      </div>
+      <div class="gotchas-area" id="gotchas">
+        <div class="text-content">
+          <h2>Gotcha's</h2>
+        </div>
+        <h3>Bus & Train</h3>
+        <p>
+          During the development of the ‘Book A Bus’ and ‘Madaraka Express’ mini programs, there were a number of notable hitches that took some technical maneuverability to surmount.
+        </p>
+        <ol>
+          <li>The Mini Program Framework has no provisions for ensuring the security and integrity of secret keys or tokens used throughout the mini program. This necessitates a config server to serve these variables whenever a user loads into a mini program.</li>
+          <li>When a user interacts with the mini program on their mobile devices, the display often times out before a user is able to complete their business within the mini program. This tends to reset all selected or input values owing to the stateless nature of the mini program. This necessitates caching of any input the user provides during such a scenario.</li>
+          <li>Although the MPESA app holds user information, the mini programs currently don’t have capabilities of accessing details like phone number, date of birth or national ID.</li>
+          <li>Certain APIs used to implement functionalities like the main payment processing call, have a skewed scoping behaviour i.e the use of this.* prefix requires a change to that.*.</li>
+          <li>Making HTTPS requests requires different considerations for both iOS and Android. Certain URL endpoints cannot be called by passing query parameters, but only by passing a JSON body as the request parameter.</li>
+          <li>The framework mainly supports javascript for writing page logic, but only allows a limited amount of NPM packages to be installed. This means a majority of validation, form inputs, date inputs and error feedback require the writing of extensive lines of code to implement with vanilla JavaScript.</li>
+          <li>When publishing a new mini program version on the mini program developer platform it is important to provision payments as a feature and whitelist all domains that are used for HTTPS request calls within the mini program.</li>
+          <li>The documentation mainly covers the use of components provided by the mini-antui npm library which is deprecated, while current mini programs use the mini-ali-ui package.</li>
+        </ol>
+        <h3>Flights</h3>
+        <p>The ‘Book A Flight’ mini app was launched on the 3rd to safcom internal and 6th to the general public. The general public launch coincided with a promo run in partnership with saf.</p>
+        <ol>
+          <li></li>
+          
+          <img src="./imgs/timer_pic.PNG" alt="bg" class="bg-miniprogram">
+          <img src="./imgs/during_promo.PNG" alt="bg" class="bg-miniprogram">
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="app.js"></script>
+</body>
+
+</html>
